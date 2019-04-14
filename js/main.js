@@ -148,7 +148,7 @@ function update(source) {
       .style("fill-opacity", 1e-6);
 
   // Update the links…
-  var link = dvis.selectAll("js/main.js")
+  var link = dvis.selectAll("https://nurnazira.github.io/")
       .data(tree.links(nodes), function(d) { return d.target.id; });
 
   // Enter any new links at the parent's previous position.
