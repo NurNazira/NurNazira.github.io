@@ -110,7 +110,7 @@ function update(source) {
 	  .attr("cursor","pointer")
       .text(function(d) { 
 	  	if (d.depth==0){
-	  		return "Federal"; 
+	  		return "State/Country"; 
 		}
 		else{
 			return splitName(d);
@@ -148,7 +148,7 @@ function update(source) {
       .style("fill-opacity", 1e-6);
 
   // Update the links…
-  var link = dvis.selectAll("path.link")
+  var link = dvis.selectAll("js/main.js")
       .data(tree.links(nodes), function(d) { return d.target.id; });
 
   // Enter any new links at the parent's previous position.
