@@ -23,9 +23,9 @@ var dvis = d3.select("#d3viz").append("svg:svg")
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
 Promise.all([
-d3.csv("http://data.stats.gov.my/download_bptms.php?cat=1&id=1"),
-d3.csv("http://data.stats.gov.my/download_bptms.php?cat=1&id=5"),
-d3.csv("http://data.stats.gov.my/download_bptms.php?cat=1&id=7"), ]).then(function(allData) {
+d3.csv("https://github.com/NurNazira/NurNazira.github.io/blob/master/Malaysia%20outside%20labour%20force%20by%20state.csv"),
+d3.csv("https://github.com/NurNazira/NurNazira.github.io/blob/master/Malaysia%20unemployment%20people%20by%20state.csv"),
+d3.csv("https://github.com/NurNazira/NurNazira.github.io/blob/master/Malaysia%20unemployment%20rate%20by%20state.csv"), ]).then(function(allData) {
     console.log(d3.merge(allData));
 });
   root = csv;
