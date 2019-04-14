@@ -210,7 +210,7 @@ function tabfilter(d) {
     filterString = 'Year|'+d.name;
      setParameter('filterInput',filterString);
   } else {
-     filterString = 'Unemployement|'+d.parent.name+'|'+d.name;
+     filterString = 'Unemployed ('000)|'+d.parent.name+'|'+d.name;
      setParameter('filterInput',filterString);
   }
 } 
