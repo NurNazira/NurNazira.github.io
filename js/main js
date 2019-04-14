@@ -22,9 +22,7 @@ var dvis = d3.select("#d3viz").append("svg:svg")
   .append("svg:g")
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-d3.csv("https://github.com/NurNazira/NurNazira.github.io/blob/master/Malaysia%20outside%20labour%20force%20by%20state.csv",
-"https://github.com/NurNazira/NurNazira.github.io/blob/master/Malaysia%20unemployment%20people%20by%20state.csv", 
-"https://github.com/NurNazira/NurNazira.github.io/blob/master/Malaysia%20unemployment%20rate%20by%20state.csv", function (csv)
+d3.csv("https://github.com/NurNazira/NurNazira.github.io/blob/master/Malaysia%20unemployment%20people%20by%20state.csv", function(csv)
   root = csv;
   root.x0 = h / 2;
   root.y0 = 0;
