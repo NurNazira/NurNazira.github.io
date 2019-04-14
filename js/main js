@@ -22,8 +22,11 @@ var dvis = d3.select("#d3viz").append("svg:svg")
   .append("svg:g")
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-d3.json("https://codepen.io/robertrouse/pen/GpRBOm.js", function(json) {
-  root = json;
+d3.csv("http://data.stats.gov.my/download_bptms.php?cat=1&id=1"),
+d3.csv("http://data.stats.gov.my/download_bptms.php?cat=1&id=5"),
+d3.csv("http://data.stats.gov.my/download_bptms.php?cat=1&id=7"), function(data)
+{
+  root = csv;
   root.x0 = h / 2;
   root.y0 = 0;
 
