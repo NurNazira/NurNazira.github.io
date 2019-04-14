@@ -205,12 +205,12 @@ function toggle(d) {
 function tabfilter(d) {
   var filterString = "";
   if (d.depth==0){
-     setParameter('filterInput','Federal');
+     setParameter('filterInput','State');
   }else if(d.depth==1){
     filterString = 'Agency|'+d.name;
      setParameter('filterInput',filterString);
   } else {
-     filterString = 'Bureau|'+d.parent.name+'|'+d.name;
+     filterString = 'Unemployement|'+d.parent.name+'|'+d.name;
      setParameter('filterInput',filterString);
   }
 } 
